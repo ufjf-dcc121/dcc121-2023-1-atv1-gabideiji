@@ -5,8 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Jogos jogados</title>
-    <link rel="stylesheet" href ="estilopb.css"/>
-
+        <link rel="stylesheet" href ="estilopb.css"/>
+        <style>
+            li.serie {
+                color: green;
+            }
+            li.filme {
+                color:blue;
+            }
+            .jogo {
+                color: orangered;
+            }
+            p > .jogo {
+                border-bottom: dashed;
+            }
+        </style>
 </head>
 <body> 
     <header>
@@ -23,25 +36,26 @@
     </p>Tres ultimos jogos que joguei<p>
 
  <ol>
-    <li>League Of Legends </li>
-    <li>Geoguessr </li>
-    <li>Far Cry 4 </li>
+     <li class="jogo" >Geoguessr </li>
+     <li class="jogo" >Far Cry 4 </li>
+     <li class="jogo" > League Of Legends </li>
  </ol>
+ <p> E o <span class="jogo"> Geoguessr </span> foi meu preferido</p>
 
     <p>Filmes e Series que assisti: </p>
     <ul>
         <li>
             <div>Filmes</div>
-        <ul style="color:green;">
-            <li>Little Miss Sunshine</li>
-            <li>The House on Sorority Row</li>
+        <ul>
+            <li class="filme">Little Miss Sunshine</li>
+            <li class="filme">The House on Sorority Row</li>
         </ul>
         </li>
         <li>
             <div>Series</div>
-            <ul style="color:blue;">
-                <li>Breaking Bad</li>
-                <li>Atlanta</li>
+            <ul>
+                <li class="serie">Breaking Bad</li>
+                <li class="serie">Atlanta</li>
             </ul>
         </li>
     </ul>
